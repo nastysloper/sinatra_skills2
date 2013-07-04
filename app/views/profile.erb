@@ -1,0 +1,15 @@
+<div class="profile">
+  <h1><%= @user.name %></h1>
+  <table class="skills">
+    <th>Current Skills</th><th>Years</th><th>Formal Training?</th>
+    <% @user.proficiencies.each do |skill| %>
+    <tr><td><%= Skill.find(skill.skill_id).name + "(#{Skill.find(skill.skill_id).context})" %></td>
+      <td><%= skill.experience %></td>
+      <td><%= skill.is_formal? %><td><a href="/edit/<%= skill.id %>">Edit</a></td></td>
+    </tr>
+    <% end %>
+    </table>
+    <form class="newskill" method="LINK" action="/user/<%= @user.id %>/addskill">
+      <INPUT TYPE="submit" VALUE="Add New Skill">
+      </form>
+</div>

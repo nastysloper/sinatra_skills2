@@ -1,0 +1,10 @@
+<div class="container">
+  <form action="/edit/<%= @proficiency.id %>" method="post">
+    <input type="text" name="proficiency" placeholder="Skill" value="<%= @proficiency.skill.name %>"><br>
+    <input type="text" name="experience" placeholder="Years of Experience" value="<%= @proficiency.experience %>"><br>
+    Have you had formal training?<br>
+    <input type="radio" name="formal" value="true">Yes<br>
+    <input type="radio" name="formal" value="false">No<br>
+    <input type="submit" value="Update">
+  </form>
+</div>

@@ -73,3 +73,22 @@ form.quirks {
   margin-right: 20px;
   width: 200px;
 }
+.skills th {
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+td {
+  border: 1px solid gray;
+  padding:5px;
+}
+
+.profile {
+  margin-left: 50px;
+}
+
+#newskill {
+  
+  padding-left: 5px;
+  padding-top: 5px;
+}
